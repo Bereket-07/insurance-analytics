@@ -133,58 +133,41 @@ This project involves comprehensive data analysis, version control, hypothesis t
 
 This project employs various technologies and libraries to achieve its objectives. Here’s a brief overview of each:
 
-1. **Programming Language**: 
+## Technologies Used
 
-   - [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=yellow)](https://www.python.org/)**Python**: A versatile programming language used for data analysis, machine learning, and web development.
+This project utilizes a range of technologies and libraries to perform comprehensive data analysis, statistical testing, and model development. The following technologies were used:
+
+1. **Programming Language**: [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=yellow)](https://www.python.org/)
 
 2. **Data Preparation and Manipulation**:
-
-   - **Handling Missing Data and Feature Engineering**: [![Pandas](https://img.shields.io/badge/Pandas-Data_Manipulation-150458?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
-     - **Pandas**: Provides data structures and functions for efficiently manipulating large datasets.
-   - **Encoding Categorical Data**: [![NumPy](https://img.shields.io/badge/NumPy-Data_Manipulation-013243?style=flat&logo=numpy&logoColor=white)](https://numpy.org/)
-     - **NumPy**: Supports numerical operations and is essential for data preparation tasks.
+   - **Handling Missing Data**: [![Pandas](https://img.shields.io/badge/Pandas-Data_Manipulation-150458?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+   - **Feature Engineering and Encoding Categorical Data**: [![NumPy](https://img.shields.io/badge/NumPy-Data_Manipulation-013243?style=flat&logo=numpy&logoColor=white)](https://numpy.org/)
    - **Train-Test Split**: [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
-     - **Scikit-Learn**: Offers tools for splitting data into training and testing sets and performing various machine learning tasks.
 
 3. **Statistical Testing**:
-
    - **Chi-squared Tests and T-tests/Z-tests**: [![SciPy](https://img.shields.io/badge/SciPy-Scientific_Computing-8A2C2A?style=flat&logo=scipy&logoColor=white)](https://scipy.org/)
-     - **SciPy**: Provides functions for scientific and technical computing, including statistical tests.
 
 4. **Modeling Techniques**:
-
    - **Linear Regression, Decision Trees, Random Forests, Gradient Boosting Machines (GBMs)**:
      - **XGBoost**: [![XGBoost](https://img.shields.io/badge/XGBoost-0E4A5B?style=flat&logo=xgboost&logoColor=white)](https://xgboost.readthedocs.io/)
-       - **XGBoost**: An efficient and scalable implementation of gradient boosting for predictive modeling.
 
 5. **Feature Importance Analysis**:
-
-   - **SHAP and LIME**: [![SHAP](https://img.shields.io/badge/SHAP-FFD700?style=flat&logo=python&logoColor=black)](https://shap.readthedocs.io/)
-     - **SHAP**: Explains the output of machine learning models by calculating the importance of each feature.
-     - **LIME**: Provides local explanations for individual predictions made by a model.
+   - **SHAP (SHapley Additive exPlanations)**: [![SHAP](https://img.shields.io/badge/SHAP-FFD700?style=flat&logo=python&logoColor=black)](https://shap.readthedocs.io/)
+   - **LIME (Local Interpretable Model-agnostic Explanations)**: [![LIME](https://img.shields.io/badge/LIME-8B4513?style=flat&logo=python&logoColor=white)](https://lime-ml.readthedocs.io/)
 
 6. **Data Visualization**:
-
-   - **Histograms, Bar Charts, Scatter Plots, Box Plots**:
-     - **Matplotlib**: [![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
-       - **Matplotlib**: A plotting library used for creating static, animated, and interactive visualizations in Python.
-     - **Seaborn**: [![Seaborn](https://img.shields.io/badge/Seaborn-Visualization-3776AB?style=flat&logo=seaborn&logoColor=white)](https://seaborn.pydata.org/)
-       - **Seaborn**: Built on top of Matplotlib, Seaborn provides a high-level interface for drawing attractive statistical graphics.
-     - **Plotly**: [![Plotly](https://img.shields.io/badge/Plotly-Visualization-3F4D8A?style=flat&logo=plotly&logoColor=white)](https://plotly.com/)
-       - **Plotly**: Offers interactive graphing libraries for creating web-based visualizations.
+   - **Histograms, Bar Charts, Scatter Plots, Box Plots**: [![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
+   - **Advanced Visualization**: [![Seaborn](https://img.shields.io/badge/Seaborn-Visualization-3776AB?style=flat&logo=seaborn&logoColor=white)](https://seaborn.pydata.org/)
+   - **Interactive Visualizations**: [![Plotly](https://img.shields.io/badge/Plotly-Visualization-3F4D8A?style=flat&logo=plotly&logoColor=white)](https://plotly.com/)
 
 7. **Version Control**:
-
    - **DVC (Data Version Control)**: [![DVC](https://img.shields.io/badge/DVC-Data_Version_Control-0075A1?style=flat&logo=python&logoColor=white)](https://dvc.org/)
-     - **DVC**: Manages and version controls data and models, providing reproducibility in machine learning projects.
    - **Git**: [![Git](https://img.shields.io/badge/Git-Version_Control-F05032?style=flat&logo=git&logoColor=white)](https://git-scm.com/)
-     - **Git**: A distributed version control system used to track changes in source code during software development.
 
 8. **Dashboard Development**:
    - **Visualization Tools**: [![Dash](https://img.shields.io/badge/Dash-Visualization-000000?style=flat&logo=python&logoColor=white)](https://dash.plotly.com/)
-     - **Dash**: A framework for building interactive web applications and dashboards in Python.
    - **Deployment**: [![Heroku](https://img.shields.io/badge/Heroku-Deployment-430098?style=flat&logo=heroku&logoColor=white)](https://www.heroku.com/)
-     - **Heroku**: A platform as a service (PaaS) that enables developers to build, run, and operate applications in the cloud.
+
 
 ## Folder Organization
 
