@@ -1,4 +1,4 @@
-# 🛡️ Insurance Analysis 
+# 🛡️ Insurance Analysis
 
 ## Table of Contents
 
@@ -9,7 +9,6 @@
 - [Notes](#notes)
 - [Contributing](#contributing)
 - [License](#license)
-
 
 ## Overview: Key Functionalities
 
@@ -48,7 +47,6 @@ Follow these steps to set up Data Version Control (DVC) for managing your data:
 5. **Commit Changes to Version Control**: Commit the `.dvc` files (which include information about your data files and their versions) to your Git repository: `git add .` and `git commit -m "Add data tracking with DVC"`
 6. **Push Data to Local Remote**: Push your data to the local remote storage: `dvc push`
 
-
 ### Task 3 - A/B Hypothesis Testing
 
 ## A/B Hypothesis Testing
@@ -56,20 +54,24 @@ Follow these steps to set up Data Version Control (DVC) for managing your data:
 ### Tasks Completed
 
 1. **Test Null Hypotheses**:
+
    - **No risk differences across provinces**: Evaluated if risk levels differ between provinces.
    - **No risk differences between zip codes**: Assessed if risk levels vary between zip codes.
    - **No significant margin (profit) differences between zip codes**: Analyzed whether profit margins differ significantly between zip codes.
    - **No significant risk differences between women and men**: Determined if there are notable risk differences between genders.
 
 2. **Select Metrics**:
+
    - Chose key performance indicators (KPIs) to measure the impact of the features being tested.
 
 3. **Data Segmentation**:
+
    - **Group A (Control Group)**: Included plans without the feature.
    - **Group B (Test Group)**: Included plans with the feature.
    - For features with multiple classes, selected two categories to form Group A and Group B, ensuring these groups did not have significant differences on attributes other than the feature being tested.
 
 4. **Perform Statistical Testing**:
+
    - Applied chi-squared tests for categorical data and t-tests/z-tests for numerical data to assess feature impact.
    - Analyzed p-values:
      - **p_value < 0.05**: Rejected the null hypothesis, indicating a statistically significant effect on the KPI.
@@ -79,18 +81,19 @@ Follow these steps to set up Data Version Control (DVC) for managing your data:
    - Reviewed statistical outcomes to determine if there was evidence to reject the null hypotheses.
    - Documented findings and interpreted results in the context of their impact on business strategy and customer experience.
 
-
 ### Task 4 - ## Statistical Modeling
 
 ### Tasks Completed
 
 1. **Data Preparation**:
+
    - **Handling Missing Data**: Imputed or removed missing values based on their nature and the quantity missing.
    - **Feature Engineering**: Created new features relevant to `TotalPremium` and `TotalClaims`.
    - **Encoding Categorical Data**: Converted categorical data into numeric format using one-hot encoding or label encoding for modeling suitability.
    - **Train-Test Split**: Divided the data into a training set (for model building) and a test set (for validation), typically using a 70:30 or 80:20 ratio.
 
 2. **Modeling Techniques**:
+
    - **Linear Regression**: Implemented linear regression model.
    - **Decision Trees**: Implemented decision tree model.
    - **Random Forests**: Implemented random forest model.
@@ -98,18 +101,20 @@ Follow these steps to set up Data Version Control (DVC) for managing your data:
      - **XGBoost**: Implemented XGBoost model.
 
 3. **Model Building**:
+
    - Built and trained Linear Regression, Random Forests, and XGBoost models.
 
 4. **Model Evaluation**:
+
    - Evaluated each model using metrics such as accuracy, precision, recall, and F1-score.
 
 5. **Feature Importance Analysis**:
+
    - Analyzed feature importance to determine which features are most influential in predicting retention.
    - Used SHAP (SHapley Additive exPlanations) or LIME (Local Interpretable Model-agnostic Explanations) to interpret model predictions and understand how individual features influence outcomes.
 
 6. **Report Comparison**:
    - Compared performance across different models and documented findings.
-
 
 ### Dashboard Development
 
@@ -119,20 +124,20 @@ Follow these steps to set up Data Version Control (DVC) for managing your data:
    - **Interactivity**: Incorporate interactive elements to enhance user engagement.
    - **Deployment**: Deploy the dashboard and make it accessible via a public URL.
 
-
 ## Technologies
 
 This project involves comprehensive data analysis, version control, hypothesis testing, and statistical modeling, all managed with a set of specialized tools and frameworks. The backend code is written in Python, leveraging a variety of libraries to support different aspects of the project.
-
 
 ## Technologies Used
 
 This project employs various technologies and libraries to achieve its objectives. Here’s a brief overview of each:
 
 1. **Programming Language**: [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=yellow)](https://www.python.org/)
+
    - **Python**: A versatile programming language used for data analysis, machine learning, and web development.
 
 2. **Data Preparation and Manipulation**:
+
    - **Handling Missing Data and Feature Engineering**: [![Pandas](https://img.shields.io/badge/Pandas-Data_Manipulation-150458?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
      - **Pandas**: Provides data structures and functions for efficiently manipulating large datasets.
    - **Encoding Categorical Data**: [![NumPy](https://img.shields.io/badge/NumPy-Data_Manipulation-013243?style=flat&logo=numpy&logoColor=white)](https://numpy.org/)
@@ -141,20 +146,24 @@ This project employs various technologies and libraries to achieve its objective
      - **Scikit-Learn**: Offers tools for splitting data into training and testing sets and performing various machine learning tasks.
 
 3. **Statistical Testing**:
+
    - **Chi-squared Tests and T-tests/Z-tests**: [![SciPy](https://img.shields.io/badge/SciPy-Scientific_Computing-8A2C2A?style=flat&logo=scipy&logoColor=white)](https://scipy.org/)
      - **SciPy**: Provides functions for scientific and technical computing, including statistical tests.
 
 4. **Modeling Techniques**:
+
    - **Linear Regression, Decision Trees, Random Forests, Gradient Boosting Machines (GBMs)**:
      - **XGBoost**: [![XGBoost](https://img.shields.io/badge/XGBoost-0E4A5B?style=flat&logo=xgboost&logoColor=white)](https://xgboost.readthedocs.io/)
        - **XGBoost**: An efficient and scalable implementation of gradient boosting for predictive modeling.
 
 5. **Feature Importance Analysis**:
+
    - **SHAP and LIME**: [![SHAP](https://img.shields.io/badge/SHAP-FFD700?style=flat&logo=python&logoColor=black)](https://shap.readthedocs.io/)
      - **SHAP**: Explains the output of machine learning models by calculating the importance of each feature.
      - **LIME**: Provides local explanations for individual predictions made by a model.
 
 6. **Data Visualization**:
+
    - **Histograms, Bar Charts, Scatter Plots, Box Plots**:
      - **Matplotlib**: [![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
        - **Matplotlib**: A plotting library used for creating static, animated, and interactive visualizations in Python.
@@ -164,6 +173,7 @@ This project employs various technologies and libraries to achieve its objective
        - **Plotly**: Offers interactive graphing libraries for creating web-based visualizations.
 
 7. **Version Control**:
+
    - **DVC (Data Version Control)**: [![DVC](https://img.shields.io/badge/DVC-Data_Version_Control-0075A1?style=flat&logo=python&logoColor=white)](https://dvc.org/)
      - **DVC**: Manages and version controls data and models, providing reproducibility in machine learning projects.
    - **Git**: [![Git](https://img.shields.io/badge/Git-Version_Control-F05032?style=flat&logo=git&logoColor=white)](https://git-scm.com/)
@@ -174,9 +184,6 @@ This project employs various technologies and libraries to achieve its objective
      - **Dash**: A framework for building interactive web applications and dashboards in Python.
    - **Deployment**: [![Heroku](https://img.shields.io/badge/Heroku-Deployment-430098?style=flat&logo=heroku&logoColor=white)](https://www.heroku.com/)
      - **Heroku**: A platform as a service (PaaS) that enables developers to build, run, and operate applications in the cloud.
-
-
-
 
 ## Folder Organization
 
@@ -204,7 +211,7 @@ This project employs various technologies and libraries to achieve its objective
                     └── 📝app.py
 └── ⌛tests
          └── 📃__init__.py
-         
+
 └── 📜.gitignore
 └── 📰README.md
 └── 🔋requirements.txt
@@ -231,6 +238,7 @@ This project employs various technologies and libraries to achieve its objective
 ### **Tasks**
 
 1. **Basic Data Analysis**:
+
    - **Objective**: Provide a comprehensive overview of the dataset to understand its structure and basic statistics.
    - **Sub-tasks**:
      - Use the `basic_info` method to get a summary of the dataset, including shape and descriptive statistics.
@@ -241,6 +249,7 @@ This project employs various technologies and libraries to achieve its objective
      - **Task 1.2**: Display descriptive statistics for numerical columns and unique value counts for categorical columns.
 
 2. **Handling Missing Values**:
+
    - **Objective**: Identify and handle missing values in the dataset to prepare it for further analysis.
    - **Sub-tasks**:
      - Detect missing values using the `missing_values` method.
@@ -250,6 +259,7 @@ This project employs various technologies and libraries to achieve its objective
      - **Task 2.2**: Apply median imputation for numerical columns and mode imputation for categorical columns.
 
 3. **Outlier Detection and Handling**:
+
    - **Objective**: Identify and address outliers to ensure data quality and accuracy.
    - **Sub-tasks**:
      - Detect outliers using the `detecting_outliers` method with boxplots.
@@ -272,10 +282,10 @@ This project employs various technologies and libraries to achieve its objective
      - **Task 4.3**: Plot pairwise relationships and correlation matrices to identify patterns.
 
 ### **Expected Outcomes**
+
 - **Data Summary**: An overview of dataset structure and basic statistics.
 - **Data Quality**: Insights into missing values and outliers with appropriate handling.
 - **Visual Insights**: A set of visualizations to understand data distributions, relationships, and trends.
-
 
 - **📁scripts**: Contains Python scripts used throughout the project.
 
@@ -287,11 +297,11 @@ This directory contains essential Python modules for analyzing and processing cu
 
 - **📃 `__init__.py`**: Initializes the package and allows importing of modules.
 
-- **📃 `eda.py`**: a module for a exploratory data analysis 
+- **📃 `eda.py`**: a module for a exploratory data analysis
 
 ### **Usage**
-These modules are designed to be used in conjunction with each other to streamline the data analysis process, from data preparation and cleaning to in-depth analysis and model creation.
 
+These modules are designed to be used in conjunction with each other to streamline the data analysis process, from data preparation and cleaning to in-depth analysis and model creation.
 
 - **💻src**: The main source code of the project, including the Streamlit dashboard and other related files.
 
@@ -301,7 +311,7 @@ These modules are designed to be used in conjunction with each other to streamli
 
 - **⌛tests**: Contains test files, including unit and integration tests.
 
-  - ****init**.py**: Initialization file for the test module.
+  - \***\*init**.py\*\*: Initialization file for the test module.
 
 - **📜.gitignore**: Specifies files and directories to be ignored by Git.
 
@@ -318,6 +328,7 @@ These modules are designed to be used in conjunction with each other to streamli
 ```bash
 git clone https://github.com/Bereket-07/User_Analysis_and_Engagement.git
 ```
+
 2. Change directory
 
 ```bash
