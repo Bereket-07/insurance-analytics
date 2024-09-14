@@ -133,9 +133,9 @@ This project involves comprehensive data analysis, version control, hypothesis t
 
 This project employs various technologies and libraries to achieve its objectives. Here’s a brief overview of each:
 
-1. **Programming Language**: [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=yellow)](https://www.python.org/)
+1. **Programming Language**: 
 
-   - **Python**: A versatile programming language used for data analysis, machine learning, and web development.
+   - [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=yellow)](https://www.python.org/)**Python**: A versatile programming language used for data analysis, machine learning, and web development.
 
 2. **Data Preparation and Manipulation**:
 
