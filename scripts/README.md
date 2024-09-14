@@ -16,6 +16,7 @@
 
 ### Data Summarization Overview
 
+
 This project involves a comprehensive data analysis to uncover insights and trends:
 
 1. **Descriptive Statistics**: Assessed variability for numerical features such as `TotalPremium` and `TotalClaim`.
