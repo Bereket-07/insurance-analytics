@@ -1,6 +1,8 @@
 import pandas as pd
 from scipy.stats import chi2_contingency , ttest_ind , f_oneway
 import os
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 def load_data(filepath):
@@ -90,4 +92,28 @@ def report_results(p_value,alpha=0.05):
         return "Reject the null hypothesis (statistically significant)"
     else:
         return "Fail to reject the null hypothesis (not statistically significant)" 
+def visualize_province_risk(data):
+    plt.figure(figsize=(12, 6))
+    sns.boxplot(x='Province', y='TotalClaims', data=data)
+    plt.title('Distribution of Total Claims by Province')
+    plt.xticks(rotation=45)
+    plt.show()
+def visualize_zipcode_risk(data):
+    plt.figure(figsize=(12, 6))
+    sns.boxplot(x='PostalCode', y='TotalClaims', data=data)
+    plt.title('Distribution of Total Claims by Zip Code')
+    plt.xticks(rotation=45)
+    plt.show()
+def visualize_zipcode_margin(data):
+    plt.figure(figsize=(12, 6))
+    sns.boxplot(x='PostalCode', y='TotalPremium', data=data)
+    plt.title('Distribution of Total Premium by Zip Code')
+    plt.xticks(rotation=45)
+    plt.show()
+def visualize_gender_risk(data):
+    plt.figure(figsize=(8, 6))
+    sns.violinplot(x='Gender', y='TotalClaims', data=data)
+    plt.title('Distribution of Total Claims by Gender')
+    plt.show()
+
     
